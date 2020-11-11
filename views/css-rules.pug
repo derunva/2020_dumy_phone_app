@@ -1,0 +1,18 @@
+extends layout
+block content
+  h1 CSS rules
+  h2 minimum
+  ul
+    each item in list_minimum
+      li=item
+block footer
+  h2 extended
+  .my-profile
+    .my-profile--image
+      img()
+    .my-profile--fullname
+      | Alex #[strong Doe]
+    .my-profile--shortinfo
+      span text
+      |
+      span text 1

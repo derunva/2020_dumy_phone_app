@@ -1,0 +1,7 @@
+extends layout
+block content
+  form(action="/update/" method="post")
+    input(type="hidden" name="contact_id" value=contact.id)
+    input(type="text" name="name" placeholder="your name?" value=contact.name)
+    input(type="text" name="phone" placeholder="your phone?" value=contact.phone)
+    button send

@@ -1,0 +1,6 @@
+extends layout
+block content
+  form(action="/save-user" method="post")
+    input(type="hidden" name="name" placeholder="your name?" value=name)
+    input(type="text" name="phone" placeholder="your phone?" value="")
+    button send

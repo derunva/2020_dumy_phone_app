@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: sans-serif;
+}
+a[title] {
+   color: green;
+}
+a[href^="tel:"] {
+  color: inherit;
+  border-bottom: 2px dashed #333;
+  text-decoration: none;
+}
+.contact {
+  padding: 10px;
+  /* all sides */
+  /* padding: 10px 20px; */
+  /* top\bottom & left\right */
+  /* padding: 10px 20px 12px; */
+  /* top -10 left\right - 20 bottom -12 */
+  /* padding: 10px 20px 12px 21px; */
+  border-radius: 16px 0 16px 0;
+  border: 4px double #ff8f03;
+}
+.contact--data {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.contact--name {
+  margin-right: 15px;
+  font-weight: 900;
+}
+.contact--phone {
+  font-style: oblique;
+}
+.contact--actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  background: orange;
+  color: #fff;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+.button_red {
+  background: red;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-b-50 {
+  margin-bottom: 50px;
+}
+.p-t-15 {
+  padding-top: 15px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+/* GUTTER - горизонтальна відстань між елементами на сайті  30px*/
+
+.wrapper {
+  max-width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-profile--shortinfo span {
+  display: inline-block;
+  border-radius: 5px;
+  background: red;
+  color: #fff;
+  padding: 20px;
+  width: 50%;
+}

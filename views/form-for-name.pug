@@ -1,0 +1,46 @@
+extends layout
+block content
+  form(action="/phone-action" method="post")
+    input(type="text" name="name" placeholder="your name?" value="")
+    button send
+  // -
+  //   var contacts = [
+  //     {
+  //       "name": "alex",
+  //       "phone": "908",
+  //     }
+  //   ]
+  // layout of block (some element of design) 
+  each contact, id in contacts
+    .contact.m-b-20
+      .contact--data
+        .contact--name=contact.name
+        -
+          var phone = contact.phone
+          var userReadablePhone = phone
+            .replace(/(\d{3})(\d{2})(\d{2})(\d{3})/, '($1) $2-$3-$4');
+        a(href="tel:" + phone).contact--phone  
+          | #{userReadablePhone}
+      .contact--actions
+        form(method="post" action="/delete/" + id)
+          button.button.button_red
+              <i class="far fa-trash-alt"></i>
+        a.button(href="/edit/"+ id  title="edit record")
+          <i class="fas fa-pencil-alt"></i>
+  table
+    thead
+      tr
+        th Name
+        th Phone
+        th Actions
+    tbody
+      each contact, id in contacts
+        tr
+          td=contact.name
+          td=contact.phone
+          td
+            form(method="post" action="/delete/" + id)
+              button remove
+          td
+            a(href="/edit/"+ id) Edit
+        
