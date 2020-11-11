@@ -1,0 +1,22 @@
+{
+  "name": "2020_dumy_phone_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derunva/2020_dumy_phone_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derunva/2020_dumy_phone_app/issues"
+  },
+  "homepage": "https://github.com/derunva/2020_dumy_phone_app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
